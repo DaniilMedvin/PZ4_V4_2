@@ -1,0 +1,10 @@
+ЗАХИСТ.md
+.claude/
+.impeccable/
+.vscode/
+.idea/
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
