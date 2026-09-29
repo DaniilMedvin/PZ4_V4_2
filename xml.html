@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XML</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>XML</h1>
+<nav><a href="index.html">Головна</a><a href="json.html">JSON</a><a href="disciplines.xml">Файл</a></nav>
+<input id="file" class="file" type="file" accept=".xml" hidden>
+<div id="result"></div>
+<script src="common.js"></script>
+<script>
+load("disciplines.xml", text => {
+  const doc = new DOMParser().parseFromString(text, "application/xml");
+  const list = [...doc.getElementsByTagName("discipline")].map(node => ({
+    name: node.getElementsByTagName("name")[0].textContent,
+    hours: Number(node.getElementsByTagName("hours")[0].textContent),
+    teacher: node.getElementsByTagName("teacher")[0].textContent
+  }));
+  return maxHours(list);
+});
+</script>
+</body>
+</html>

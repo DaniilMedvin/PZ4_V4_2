@@ -1,0 +1,7 @@
+{
+  "disciplines": [
+    { "name": "Програмування", "hours": 120, "credits": 4, "teacher": "Коваленко І. П." },
+    { "name": "Бази даних", "hours": 90, "credits": 3, "teacher": "Мельник О. В." },
+    { "name": "Вища математика", "hours": 150, "credits": 5, "teacher": "Шевченко Т. Г." }
+  ]
+}

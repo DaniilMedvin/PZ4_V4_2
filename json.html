@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JSON</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>JSON</h1>
+<nav><a href="index.html">Головна</a><a href="xml.html">XML</a><a href="disciplines.json">Файл</a></nav>
+<input id="file" class="file" type="file" accept=".json" hidden>
+<div id="result"></div>
+<script src="common.js"></script>
+<script>
+load("disciplines.json", text => maxHours(JSON.parse(text).disciplines));
+</script>
+</body>
+</html>

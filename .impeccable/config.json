@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "bounce-easing",
+        "value": "wobble",
+        "createdAt": "2026-09-29T19:14:28.204Z",
+        "reason": "user confirmed: asked for deliberately ugly, tacky animations"
+      }
+    ]
+  }
+}
